@@ -3,15 +3,16 @@ package main
 import "fmt"
 
 func main() {
-  var num int
-  fmt.Print("Enter a number: ")
-  fmt.Scan(&num)
-  
-  if num > 10 {
-    fmt.Println("Your number is greater than 10")
-  } else if num > 5 {
-    fmt.Println("Your number is between 5 and 10")
-  } else {
-    fmt.Println("Your number is less than or equal to 5")
-  }
+	var marks int
+	fmt.Print("Enter your Marks: ")
+	fmt.Scan(&marks)
+	if marks > 80 {
+		fmt.Println("Grade A")
+	} else if marks > 60 {
+		fmt.Println("Grade B")
+	} else if marks > 40 {
+		fmt.Println("Grade C")
+	} else {
+		fmt.Println("Fail...")
+	}
 }
