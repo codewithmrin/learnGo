@@ -3,15 +3,23 @@ package main
 import "fmt"
 
 func main() {
-  var myNum int
-  fmt.Print("Enter a number: ")
+	var userInpt string
 
-  fmt.Scan(&myNum)
+	fmt.Println("Enter your Grade: ")
 
-  switch myNum {
-    case 10: fmt.Println("Your number is 10")
-    case 20: fmt.Println("Your number is 20")
-    case 30: fmt.Println("Your number is 30")
-    default: fmt.Printf("Your number is not 10, 20, or 30. But it is %d\n", myNum)
-  }
+	fmt.Scan(&userInpt)
+
+	switch userInpt {
+	case "A":
+		fmt.Println("You scored above 80%")
+	case "B":
+		fmt.Println("You scored above 60%")
+	case "C":
+		fmt.Println("You scored above 40%")
+	case "F":
+		fmt.Println("You scored below 40 and you have to repeat the subject")
+
+	default:
+		fmt.Println("Grade not Identified.")
+	}
 }
