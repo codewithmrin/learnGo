@@ -3,13 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	var userInpt string
+	var grade string
 
-	fmt.Println("Enter your Grade: ")
-
-	fmt.Scan(&userInpt)
-
-	switch userInpt {
+	fmt.Print("Enter your grade: ")
+	fmt.Scan(&grade)
+	switch grade {
 	case "A":
 		fmt.Println("You scored above 80%")
 	case "B":
@@ -17,9 +15,8 @@ func main() {
 	case "C":
 		fmt.Println("You scored above 40%")
 	case "F":
-		fmt.Println("You scored below 40 and you have to repeat the subject")
-
+		fmt.Println("You did not pass this course")
 	default:
-		fmt.Println("Grade not Identified.")
+		fmt.Println("Grade Unnknown")
 	}
 }
